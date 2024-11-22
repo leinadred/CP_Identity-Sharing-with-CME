@@ -21,6 +21,7 @@ autoprov-cfg set template -tn '<cme_template_name>' -cp 'IDSHARING <policy_packa
 ```
 
 IMPORTANT!!
+
 ---
 In case the sharing gateway is a cluster, you will have to change one line:
 
