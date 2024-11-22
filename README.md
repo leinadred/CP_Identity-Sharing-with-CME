@@ -19,8 +19,15 @@ chmod a+x /scripts/cme_identitysharing.bash
 autoprov-cfg set management -cs '/scripts/cme_identitysharing.bash'
 autoprov-cfg set template -tn '<cme_template_name>' -cp 'IDSHARING <policy_package_name_of_receiving_device> <name_of_sharing_device> <policy_package_name_of_sharing_device>`
 ```
+! In case the sharing gateway is a cluster, you will have to change one line:
 
-Additionally Identity Awareness has to be added on receiving gateway. 
+```	GW_JSON_SH=$(mgmt_cli --session-id $SID show simple-gateway name $IDSHARINGGW -f json)```
+
+to
+
+```GW_JSON_SH=$(mgmt_cli --session-id $SID show simple-cluster name $IDSHARINGGW -f json)```
+
+Additionally Identity Awareness has to be added on receiving cme managed gateway. 
 
 ```autoprov-cfg set template -tn <cme_template_name> -ia```
 
