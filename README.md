@@ -23,3 +23,5 @@ autoprov-cfg set template -tn '<cme_template_name>' -cp 'IDSHARING <policy_packa
 Additionally Identity Awareness has to be added on receiving gateway. 
 
 ```autoprov-cfg set template -tn <cme_template_name> -ia```
+
+After this all new scale set instances are set up to get identities from sharing gateway.
