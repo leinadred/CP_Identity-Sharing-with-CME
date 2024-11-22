@@ -21,7 +21,6 @@ autoprov-cfg set template -tn '<cme_template_name>' -cp 'IDSHARING <policy_packa
 ```
 
 IMPORTANT!!
-
 ---
 In case the sharing gateway is a cluster, you will have to change one line:
 
@@ -30,7 +29,7 @@ In case the sharing gateway is a cluster, you will have to change one line:
 to
 
 ```GW_JSON_SH=$(mgmt_cli --session-id $SID show simple-cluster name $IDSHARINGGW -f json)```
-
+ 
 ---
 
 Additionally Identity Awareness has to be added on receiving cme managed gateway. 
