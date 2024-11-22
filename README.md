@@ -11,6 +11,7 @@
    - search for "ia_control_connections_ip" at sharing gateway (class name "gateway_ckp") object and enter IP as value (then save and install policy)
 
 - On Management Server:
+
 ```
 mkdir /scripts
 curl_cli -k '' -O /scripts/cme_identitysharing.bash
@@ -20,4 +21,5 @@ autoprov-cfg set template -tn '<cme_template_name>' -cp 'IDSHARING <policy_packa
 ```
 
 Additionally Identity Awareness has to be added on receiving gateway. 
+
 ```autoprov-cfg set template -tn <cme_template_name> -ia```
