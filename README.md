@@ -55,5 +55,5 @@ When using i.e. Playblocks and enabling it on Cloud Guard Gateways, they are aut
 Error details: {'code': 'err_validation_failed', 'message': 'Validation failed with 1 warning', 'warnings': [{'message': 'Object <instance_name> is used by the following objects: Playblocks_Gateways'}]}
 ```
 
-Manually removing the gateway from the group is necessary, then the automatic deletion successes. (This has nothing to do with IDA sharing, but I ran into it and thought, it might be worth mentioned.
+Manually removing the gateway from the group is necessary, then the automatic deletion successes. (This is not related with Identity Sharing, but I ran into it and I thought, it might be worth mentioned.)
 
