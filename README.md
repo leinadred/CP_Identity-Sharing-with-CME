@@ -24,7 +24,7 @@ IMPORTANT!!
 ---
 In case the sharing gateway is a cluster, you will have to change one line:
 
-```	GW_JSON_SH=$(mgmt_cli --session-id $SID show simple-gateway name $IDSHARINGGW -f json)```
+```GW_JSON_SH=$(mgmt_cli --session-id $SID show simple-gateway name $IDSHARINGGW -f json)```
 
 to
 
