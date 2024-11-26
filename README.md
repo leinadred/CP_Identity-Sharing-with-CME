@@ -8,7 +8,7 @@
  - using Ports tcp/28581 and tcp/15105 (Outgoing/Incoming)
  - in default, the main addresses (i.e. cluster objects main IP - often internet facing IP)
   - if main IP is not the IP designated to be used, can be overridden via GUIDBEdit
-   - search for "ia_control_connections_ip" at sharing gateway (class name "gateway_ckp") object and enter IP as value (then save and install policy)
+    - search for "ia_control_connections_ip" at sharing gateway (class name "gateway_ckp") object and enter IP as value (then save and install policy)
 
 - On Management Server:
 
